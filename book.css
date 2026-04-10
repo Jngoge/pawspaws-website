@@ -1,0 +1,245 @@
+/* ── BOOK HERO ── */
+.book-hero {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: center;
+  padding: 80px 5vw;
+  background: var(--cream);
+}
+
+.book-hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+/* 3D Book */
+.book-3d {
+  display: flex;
+  filter: drop-shadow(16px 16px 40px rgba(26,60,46,0.25));
+  transform: perspective(800px) rotateY(-12deg);
+  transition: transform 0.4s ease;
+}
+.book-3d:hover { transform: perspective(800px) rotateY(-4deg); }
+
+.book-3d-spine {
+  width: 28px;
+  background: var(--sage);
+  border-radius: 4px 0 0 4px;
+  flex-shrink: 0;
+}
+
+.book-3d-face {
+  width: 220px;
+  height: 300px;
+  background: linear-gradient(160deg, #2d6b52 0%, #1a3c2e 100%);
+  border-radius: 0 8px 8px 0;
+  border: 1px solid rgba(168,213,181,0.2);
+  border-left: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 22px;
+}
+
+.book-face-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.book-paw { font-size: 40px; }
+.book-label {
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  color: var(--mint);
+  font-weight: 500;
+}
+.book-face-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.4;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.book-face-sub {
+  font-size: 11px;
+  color: var(--mint);
+  text-align: center;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+.book-face-author {
+  font-size: 11px;
+  color: rgba(168,213,181,0.6);
+  text-align: center;
+}
+
+/* Badges */
+.book-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.badge {
+  background: #fff;
+  border: 1px solid rgba(61,122,94,0.15);
+  border-radius: 40px;
+  padding: 6px 14px;
+  font-size: 12px;
+  color: var(--text-mid);
+  font-weight: 500;
+}
+
+/* Right side */
+.book-hero-right h1 { margin-bottom: 16px; }
+.book-hero-right h1 em { font-style: italic; color: var(--sage); }
+.book-hero-sub { color: var(--text-mid); font-size: 17px; max-width: 480px; margin-bottom: 20px; }
+
+.review-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.stars-lg { color: var(--gold); font-size: 20px; }
+.review-count { font-size: 13px; color: var(--text-light); }
+
+/* Buy box */
+.buy-box {
+  background: #fff;
+  border: 1px solid rgba(61,122,94,0.15);
+  border-radius: var(--radius);
+  padding: 28px;
+  max-width: 400px;
+}
+.price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.price {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--forest);
+}
+.price-note { font-size: 13px; color: var(--text-light); }
+
+.buy-btn { display: block; width: 100%; text-align: center; margin-bottom: 10px; }
+.ebook-btn { display: block; width: 100%; text-align: center; margin-bottom: 14px; }
+.buy-note { font-size: 12px; color: var(--text-light); text-align: center; }
+
+/* ── INSIDE ── */
+.inside { background: var(--warm-white); }
+.inside h2 { margin-bottom: 36px; }
+
+.inside-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.inside-card {
+  padding: 28px;
+  position: relative;
+}
+.inside-num {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--sage);
+  margin-bottom: 12px;
+}
+.inside-card h3 { font-size: 18px; margin-bottom: 10px; }
+.inside-card p { font-size: 14px; color: var(--text-mid); line-height: 1.7; }
+
+/* ── QUOTE BREAK ── */
+.quote-break {
+  background: var(--forest);
+  text-align: center;
+  padding: 72px 5vw;
+}
+.quote-break blockquote {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(20px, 3vw, 28px);
+  color: #fff;
+  max-width: 700px;
+  margin: 0 auto 16px;
+  line-height: 1.5;
+  font-style: italic;
+}
+.quote-break cite {
+  color: var(--mint);
+  font-size: 14px;
+  font-style: normal;
+}
+
+/* ── FOR WHO ── */
+.for-who { background: var(--cream); }
+.for-who h2 { margin-bottom: 32px; }
+
+.for-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.for-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: #fff;
+  border: 1px solid rgba(61,122,94,0.1);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+.for-icon { font-size: 24px; flex-shrink: 0; }
+.for-item p { font-size: 14px; color: var(--text-mid); line-height: 1.6; margin: 0; }
+
+/* ── REVIEWS ── */
+.book-reviews { background: var(--warm-white); }
+.book-reviews h2 { margin-bottom: 32px; }
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.review-card { padding: 28px; }
+.stars { color: var(--gold); font-size: 16px; margin-bottom: 12px; }
+.review-card p { font-size: 15px; color: var(--text-mid); font-style: italic; margin-bottom: 14px; line-height: 1.7; }
+.reviewer { font-size: 13px; color: var(--text-light); }
+.reviewer strong { color: var(--forest); }
+
+/* ── FINAL CTA ── */
+.final-cta {
+  background: var(--sage);
+  text-align: center;
+}
+.cta-inner { max-width: 600px; margin: 0 auto; }
+.final-cta h2 { color: #fff; margin-bottom: 14px; }
+.final-cta p { color: rgba(255,255,255,0.8); font-size: 16px; margin-bottom: 28px; }
+.cta-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 16px; }
+.cta-small { font-size: 13px; color: rgba(255,255,255,0.6); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .book-hero { grid-template-columns: 1fr; text-align: center; }
+  .book-hero-left { margin: 0 auto; }
+  .book-hero-right { display: flex; flex-direction: column; align-items: center; }
+  .review-row { justify-content: center; }
+  .inside-grid, .for-grid { grid-template-columns: 1fr 1fr; }
+  .reviews-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .inside-grid, .for-grid { grid-template-columns: 1fr; }
+  .book-3d { transform: none; }
+}

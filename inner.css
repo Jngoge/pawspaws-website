@@ -1,0 +1,82 @@
+/* ── TOPIC GRID (training + wellness) ── */
+.topic-section { background: var(--warm-white); }
+.topic-section h2 { margin-bottom: 32px; }
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.topic-card {
+  padding: 28px;
+  text-decoration: none;
+  display: block;
+}
+.topic-emoji { font-size: 32px; margin-bottom: 14px; }
+.topic-card h3 { font-size: 19px; margin-bottom: 10px; }
+.topic-card p { font-size: 14px; color: var(--text-mid); line-height: 1.7; margin-bottom: 14px; }
+.topic-link { font-size: 13px; color: var(--sage); font-weight: 500; }
+
+/* ── CTA BAND ── */
+.cta-band {
+  background: var(--cream);
+  text-align: center;
+  padding: 72px 5vw;
+  border-top: 1px solid rgba(61,122,94,0.1);
+}
+.cta-band h2 { margin-bottom: 12px; }
+.cta-band p { color: var(--text-mid); margin-bottom: 24px; font-size: 16px; }
+
+/* ── ABOUT PAGE ── */
+.about-story {
+  background: var(--cream);
+  padding: 80px 5vw;
+}
+.story-inner { max-width: 680px; }
+.story-inner h2 { margin-bottom: 20px; }
+.story-inner p { color: var(--text-mid); font-size: 16px; margin-bottom: 16px; line-height: 1.8; }
+
+.values-section { background: var(--warm-white); }
+.values-section h2 { margin-bottom: 32px; }
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+.value-card {
+  padding: 24px 20px;
+}
+.value-card h3 { font-size: 17px; margin: 10px 0 8px; }
+.value-card p { font-size: 14px; color: var(--text-mid); line-height: 1.6; }
+
+/* ── CONTACT ── */
+.contact-section {
+  background: var(--cream);
+  padding: 80px 5vw;
+}
+.contact-card {
+  padding: 28px;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.contact-icon { font-size: 24px; }
+.contact-item strong { display: block; font-size: 13px; color: var(--text-light); font-weight: 500; margin-bottom: 2px; }
+.contact-item a { color: var(--sage); text-decoration: none; font-size: 15px; }
+.contact-item a:hover { text-decoration: underline; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .topic-grid { grid-template-columns: 1fr 1fr; }
+  .values-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .topic-grid, .values-grid { grid-template-columns: 1fr; }
+}

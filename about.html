@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About – Pawspaws</title>
+  <meta name="description" content="About Pawspaws.us — our story, our mission, and the team behind the dog training and wellness guides." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="inner.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-logo">🐾 Paws<span>paws</span></a>
+    <ul class="nav-links">
+      <li><a href="training.html">Training</a></li>
+      <li><a href="wellness.html">Wellness</a></li>
+      <li><a href="book.html">The Book</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="book.html" class="nav-cta">Get the Book</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="section-label">About Pawspaws</div>
+    <h1>Built by dog lovers,<br>for dog lovers.</h1>
+    <p>We believe every dog deserves an owner who truly understands them — and we're on a mission to make that possible.</p>
+  </section>
+
+  <section class="about-story">
+    <div class="story-inner">
+      <div class="section-label">Our story</div>
+      <h2>Why we started Pawspaws</h2>
+      <p>Pawspaws was born from a simple frustration: too many dog owners are given contradictory, outdated, or fear-based advice that damages the bond between them and their dogs.</p>
+      <p>We set out to build a resource grounded in modern behavioural science — positive, kind, and actually effective. The result is a growing library of training and wellness guidance, and a book that has already helped thousands of dogs and owners thrive.</p>
+      <p>Our approach is simple: understand your dog, communicate clearly, and reward what you want to see more of. It works for puppies. It works for rescues. It works for every breed.</p>
+    </div>
+  </section>
+
+  <section class="values-section">
+    <div class="section-label">Our values</div>
+    <h2>What we stand for</h2>
+    <div class="values-grid">
+      <div class="value-card card">
+        <div class="topic-emoji">🔬</div>
+        <h3>Science-backed</h3>
+        <p>Every technique we teach is grounded in animal behaviour science — not tradition, not myth.</p>
+      </div>
+      <div class="value-card card">
+        <div class="topic-emoji">💚</div>
+        <h3>Force-free</h3>
+        <p>We never recommend punishment, dominance theory, or aversive tools. Ever.</p>
+      </div>
+      <div class="value-card card">
+        <div class="topic-emoji">🤝</div>
+        <h3>Relationship-first</h3>
+        <p>Training is about communication and trust — not control. A better relationship leads to better behaviour.</p>
+      </div>
+      <div class="value-card card">
+        <div class="topic-emoji">🌍</div>
+        <h3>Accessible to all</h3>
+        <p>Great dog ownership shouldn't require expensive private trainers. We make expert guidance available to everyone.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <div class="section-label">Contact</div>
+    <h2>Get in touch</h2>
+    <p style="color:var(--text-mid); max-width:480px; margin-bottom: 28px;">Have a question about the book, a training challenge, or a partnership idea? We'd love to hear from you.</p>
+    <div class="contact-card card">
+      <div class="contact-item">
+        <span class="contact-icon">📧</span>
+        <div>
+          <strong>Email us</strong>
+          <a href="mailto:hello@pawspaws.us">hello@pawspaws.us</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">🌐</span>
+        <div>
+          <strong>Website</strong>
+          <a href="https://pawspaws.us">pawspaws.us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div><div class="footer-brand">🐾 Pawspaws</div><p class="footer-tagline">Science-backed dog training<br>and wellness for every owner.</p></div>
+      <div class="footer-col"><h4>Learn</h4><ul><li><a href="training.html">Training guides</a></li><li><a href="wellness.html">Wellness tips</a></li><li><a href="book.html">The book</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About us</a></li><li><a href="about.html#contact">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul><li><a href="#">Privacy policy</a></li><li><a href="#">Terms of use</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 Pawspaws.us — All rights reserved</span><span>Made with ❤️ for dogs</span></div>
+  </footer>
+  <script>function toggleMenu(){const l=document.querySelector('.nav-links');l.style.display=l.style.display==='flex'?'none':'flex';l.style.flexDirection='column';l.style.position='absolute';l.style.top='64px';l.style.left='0';l.style.right='0';l.style.background='var(--warm-white)';l.style.padding='16px 5vw 24px';l.style.borderBottom='1px solid rgba(61,122,94,0.12)';}</script>
+</body>
+</html>

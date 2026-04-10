@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dog Wellness – Pawspaws</title>
+  <meta name="description" content="Dog wellness guides from Pawspaws — nutrition, exercise, mental stimulation, and preventive health for a long, happy dog life." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="inner.css" />
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="nav-logo">🐾 Paws<span>paws</span></a>
+    <ul class="nav-links">
+      <li><a href="training.html">Training</a></li>
+      <li><a href="wellness.html" class="active">Wellness</a></li>
+      <li><a href="book.html">The Book</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="book.html" class="nav-cta">Get the Book</a></li>
+    </ul>
+    <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+  </nav>
+
+  <section class="page-hero">
+    <div class="section-label">Wellness</div>
+    <h1>A healthy dog is<br>a happy dog.</h1>
+    <p>Wellness isn't just about vet visits. It's about daily nutrition, movement, mental health, and the choices you make every single day.</p>
+    <a href="book.html" class="btn btn-primary">Get the full wellness guide →</a>
+  </section>
+
+  <section class="topic-section">
+    <div class="section-label">Wellness pillars</div>
+    <h2>What shapes your dog's health</h2>
+    <div class="topic-grid">
+      <div class="topic-card card">
+        <div class="topic-emoji">🥩</div>
+        <h3>Nutrition & diet</h3>
+        <p>Learn how to read dog food labels, identify quality ingredients, and choose the right diet for your dog's age, breed, and activity level.</p>
+        <a href="book.html" class="topic-link">Deep dive in the book →</a>
+      </div>
+      <div class="topic-card card">
+        <div class="topic-emoji">🏃</div>
+        <h3>Exercise & movement</h3>
+        <p>How much is enough? How much is too much? Tailored exercise guidance by breed, age, and health status.</p>
+        <a href="book.html" class="topic-link">Deep dive in the book →</a>
+      </div>
+      <div class="topic-card card">
+        <div class="topic-emoji">🧠</div>
+        <h3>Mental stimulation</h3>
+        <p>A bored dog is a destructive dog. Enrichment games, puzzle feeders, and daily mental workout ideas that tire out even the most energetic breeds.</p>
+        <a href="book.html" class="topic-link">Deep dive in the book →</a>
+      </div>
+      <div class="topic-card card">
+        <div class="topic-emoji">🪥</div>
+        <h3>Dental & grooming care</h3>
+        <p>The routines that prevent expensive vet bills — teeth brushing, coat care, ear health, and nail trimming made simple.</p>
+        <a href="book.html" class="topic-link">Deep dive in the book →</a>
+      </div>
+      <div class="topic-card card">
+        <div class="topic-emoji">💉</div>
+        <h3>Preventive health</h3>
+        <p>A year-round wellness calendar covering vaccinations, parasite prevention, vet checkups, and the early warning signs to look for.</p>
+        <a href="book.html" class="topic-link">Deep dive in the book →</a>
+      </div>
+      <div class="topic-card card">
+        <div class="topic-emoji">😴</div>
+        <h3>Sleep & recovery</h3>
+        <p>Dogs need quality rest to learn, heal, and stay emotionally balanced. Learn what healthy sleep looks like across every life stage.</p>
+        <a href="book.html" class="topic-link">Deep dive in the book →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <h2>Want the complete wellness guide?</h2>
+    <p>The Pawspaws book covers every wellness topic with actionable, vet-reviewed guidance.</p>
+    <a href="book.html" class="btn btn-gold">Get the Pawspaws book</a>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div><div class="footer-brand">🐾 Pawspaws</div><p class="footer-tagline">Science-backed dog training<br>and wellness for every owner.</p></div>
+      <div class="footer-col"><h4>Learn</h4><ul><li><a href="training.html">Training guides</a></li><li><a href="wellness.html">Wellness tips</a></li><li><a href="book.html">The book</a></li></ul></div>
+      <div class="footer-col"><h4>Company</h4><ul><li><a href="about.html">About us</a></li><li><a href="about.html#contact">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Legal</h4><ul><li><a href="#">Privacy policy</a></li><li><a href="#">Terms of use</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2025 Pawspaws.us — All rights reserved</span><span>Made with ❤️ for dogs</span></div>
+  </footer>
+  <script>function toggleMenu(){const l=document.querySelector('.nav-links');l.style.display=l.style.display==='flex'?'none':'flex';l.style.flexDirection='column';l.style.position='absolute';l.style.top='64px';l.style.left='0';l.style.right='0';l.style.background='var(--warm-white)';l.style.padding='16px 5vw 24px';l.style.borderBottom='1px solid rgba(61,122,94,0.12)';}</script>
+</body>
+</html>
